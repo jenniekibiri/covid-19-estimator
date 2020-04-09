@@ -1,11 +1,11 @@
-  const inputData = {
-            region: {
-                name: "Africa",
-                avgAge: 19.7,
-                avgDailyIncomeInUSD: 5,
-                avgDailyIncomePopulation: 0.71
+const inputData = {
+  region: {
+    name: 'Africa',
+    avgAge: 19.7,
+    avgDailyIncomeInUSD: 5,
+    avgDailyIncomePopulation: 0.71
             },
-            periodType: "days",
+            periodType: 'days',
             timeToElapse: 58,
             reportedCases: 674,
             population: 66622705,
@@ -100,26 +100,26 @@
            
 
 
-            console.log(` 
-        Number of currently infected impact cases: ${outputData.impact.currentlyInfected()}
-        Number of currently infected severe impact cases: ${outputData.severeImpact.currentlyInfected()}}
-        Number of  infectionsByRequestedTime for impact cases: ${outputData.impact.infectionsByRequestedTime()}
-        Number of infectionsByRequestedTime for severe impact cases: ${outputData.severeImpact.infectionsByRequestedTime()}
-        Number of severe cases by requested time for impact cases: ${outputData.impact.severeCasesByRequestedTime()}
-        Number of severe cases by requested time for severe impact cases: ${outputData.severeImpact.severeCasesByRequestedTime()}
-        Number of beds available for impact cases: ${outputData.impact.hospitalBedsByRequestedTime()}
-        Number of beds available for severe impact cases: ${outputData.severeImpact.hospitalBedsByRequestedTime()}
-        Nuumber of icu cases for impact cases: ${outputData.impact.casesForICUByRequestedTime()}
-        Number of icu cases for severe impact cases: ${outputData.severeImpact.casesForICUByRequestedTime()}
-        Cases that require ventilators for impact cases: ${outputData.impact.casesForVentilatorsByRequestedTime()}
-        Cases that require ventilators for severe cases: ${outputData.severeImpact.casesForVentilatorsByRequestedTime()}
-        Economy loses for impact cases: ${outputData.impact.dollarsInFlight()}
-        Economy loses for severe impact cases: ${outputData.severeImpact.dollarsInFlight()}
+        //     console.log(` 
+        // Number of currently infected impact cases: ${outputData.impact.currentlyInfected()}
+        // Number of currently infected severe impact cases: ${outputData.severeImpact.currentlyInfected()}}
+        // Number of  infectionsByRequestedTime for impact cases: ${outputData.impact.infectionsByRequestedTime()}
+        // Number of infectionsByRequestedTime for severe impact cases: ${outputData.severeImpact.infectionsByRequestedTime()}
+        // Number of severe cases by requested time for impact cases: ${outputData.impact.severeCasesByRequestedTime()}
+        // Number of severe cases by requested time for severe impact cases: ${outputData.severeImpact.severeCasesByRequestedTime()}
+        // Number of beds available for impact cases: ${outputData.impact.hospitalBedsByRequestedTime()}
+        // Number of beds available for severe impact cases: ${outputData.severeImpact.hospitalBedsByRequestedTime()}
+        // Nuumber of icu cases for impact cases: ${outputData.impact.casesForICUByRequestedTime()}
+        // Number of icu cases for severe impact cases: ${outputData.severeImpact.casesForICUByRequestedTime()}
+        // Cases that require ventilators for impact cases: ${outputData.impact.casesForVentilatorsByRequestedTime()}
+        // Cases that require ventilators for severe cases: ${outputData.severeImpact.casesForVentilatorsByRequestedTime()}
+        // Economy loses for impact cases: ${outputData.impact.dollarsInFlight()}
+        // Economy loses for severe impact cases: ${outputData.severeImpact.dollarsInFlight()}
   
 
 
             
-            `)
+        //     `)
         }
 
         covid19ImpactEstimator(inputData)
